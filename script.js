@@ -16,12 +16,13 @@ amarelo.addEventListener('click', addClassSelect);
 function addClassSelect (event) {
 let corSelect = document.getElementsByClassName("selected"); 
 for ( let i = 0; i < corSelect.length; i+=1){
-      let cor = corSelect[i]
+ let cor = corSelect[i]
 cor.classList.remove("selected");
 event.target.classList.add("selected");
 
 }
 }
+
 function exercicio8() {
 let selected = document.getElementsByClassName("selected");
 let pixels = document.getElementsByClassName("pixel");
@@ -40,7 +41,16 @@ for ( let i = 0; i < pixels.length; i +=1){
 
 exercicio8()
 
-
+// const exercicio8 = () => {
+//       const pixels = document.getElementsByClassName ("selected")
+//       for ( const selected of pixels) {
+//          pixels.addEventListener ( 'click' ()){
+//          const cor pixels =document.getElementsByClassName(.selected)
+//          selected.style.backgroundColor= pixels.style.backgroundColor;
+//       })
+// }
+//}
+//exercicio8 ()
 
  
 
@@ -55,6 +65,7 @@ exercicio8()
 
    //document.getElementsByClassName('color')[0].classList.add('selected');
   // }
+  
 function exercicio9 (){
       let pixels = document.getElementsByClassName("pixel");
       let reInicio = document.getElementById("clear-board");
